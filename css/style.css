@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #32495b;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #32495b;
+}
+
+/* Classi riutilizzabili */
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.full-screen{
+  width: 100%;
+}
+
+.container{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.btn{
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-orange{
+  background-color: #fe775a;
+  color: white;
+}
+
+.btn-white{
+  background-color: white;
+  color: #fe775a;
+  border: 1px solid #fe775a;
+}
+
+.btn-large{
+  padding: 20px;
+}
+
+/* Header */
+header{
+  display: unset;
+}
+
+.header-top{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background-color: #f4f9fd;
+  border-bottom: 1px solid black;
+}
+
+.header-bottom{
+  height: 80px;
+  line-height: 80px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: white;
+}
+
+header ul li{
+  display: inline-block;
+  padding: 0 10px;
+}
+
+
+.header-top-left{
+  width: 50%;
+}
+
+.header-top-left i:last-child{
+  border-right: 2px solid grey;
+  padding-right: 20px;
+}
+
+.header-top-right{
+  width: 50%;
+  text-align: right;
+}
+
+.search{
+  color: #01a6be;
+}
+
+.header-bottom-left{
+  width: 30%;
+}
+
+.header-bottom-left img{
+  vertical-align: middle;
+}
+
+.header-bottom-right{
+  width: 70%;
+  text-align: right;
+}
+
+.header-bottom-right ul li a i{
+  padding: 0 10px;
+}
+
+.jumbotron{
+  height:688px;
+  background-color: #fdf6ee;
+  background-image: url('../img/jumbotron.png');
+  background-position: right top;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: inset 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.jumbotron::before{
+  width: 100%;
+  height: 70px;
+  background-color: #aceae3;
+  border-top: 3px solid grey;
+  border-bottom: 3px solid grey;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  display: block;
+}
+
+.jumbotron-items{
+  width: 40%;
+}
+
+.jumbotron-items h1{
+  font-size: 330%;
+  padding-top: 70px;
+}
+
+.jumbotron-items p{
+  padding: 50px 0;
+  line-height: 1.6;
+}
+
+/* Main */
+main{
+  height: 500px;
+  background-color: brown;
+}
