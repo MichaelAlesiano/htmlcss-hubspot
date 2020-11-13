@@ -170,15 +170,119 @@ main{
   background-color: white;
 }
 
-.powerful-alone{
-  height: 500px;
-  background-color: red;
+.section1{
+  background-color: #f4f9fd;
 }
 
-.hubspot-crm{
-  height: 500px;
-  background-color: blue;
+/* Powerful-alone */
+.powerful-alone{
+  text-align: center;
 }
+
+.powerful-alone img{
+  height: auto;
+  width: 300px;
+  padding-top: 50px;
+}
+
+.powerful-alone h2{
+  font-size: 250%;
+}
+
+.powerful-alone p{
+  padding: 25px 320px;
+  line-height: 1.6;
+}
+
+/* Crm */
+.crm{
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Sezione sinistra con img e titolo */
+.crm-left{
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  display: block;
+  position: relative;
+  background-color: white;
+}
+
+.crm-left .crm-img{
+  width: 45%;
+  height: 150px;
+  margin: auto;
+  margin-top: 40px;
+  background-image: url("https://www.hubspot.com/hubfs/assets/hubspot.com/_style-guide/sword-sprocket/CRM-Illustration.svg");
+  background-size: 70%;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+}
+
+.crm .crm-left a{
+  position: absolute;
+  left: 50%;
+  bottom:22%;
+  transform: translateX(-50%);
+}
+
+/* Sezione destra */
+.crm .crm-right{
+  width: 70%;
+  height: 100%;
+  background-color: white;
+}
+
+.crm .crm-right-content{
+  width: 65%;
+}
+
+.crm .crm-right-content h3{
+  margin-top: 50px;
+  font-size: 23px;
+  padding-bottom: 20px;
+}
+
+.crm .crm-right-content p{
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.crm .crm-right-content h4{
+  text-transform: uppercase;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.popolar::after{
+  content: '';
+  display: block;
+  float: right;
+  width: 65%;
+  height: 2px;
+  margin-top: 9px;
+  background-color: #899397;
+}
+
+.crm .crm-right-content li{
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 0;
+  margin-top: 35px;
+}
+
+.crm .crm-right-content li i{
+  padding-right: 7px;
+  color: #ff7a59
+}
+
+/* Fine Crm */
 
 .box{
   height: 500px;
