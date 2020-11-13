@@ -166,6 +166,55 @@ header ul li{
 
 /* Main */
 main{
+  height: 1000px;
+  background-color: white;
+}
+
+.powerful-alone{
   height: 500px;
-  background-color: brown;
+  background-color: red;
+}
+
+.hubspot-crm{
+  height: 500px;
+  background-color: blue;
+}
+
+.box{
+  height: 500px;
+  background-color: yellow;
+}
+
+.first-box{
+  height: 500px;
+  width: 30%;
+  background-color: black;
+}
+
+.second-box{
+  height: 500px;
+  width: 30%;
+  margin: 0 5%;
+  background-color: black;
+}
+
+.third-box{
+  height: 500px;
+  width: 30%;
+  background-color: black;
+}
+
+.section2{
+  height: 500px;
+  background-color: lightblue;
+}
+
+.box-azzurrino{
+  height: 500px;
+  background-color: red;
+}
+
+.prova-hubstop{
+  height: 500px;
+  background-color: black;
 }
