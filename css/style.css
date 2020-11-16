@@ -19,6 +19,10 @@ body{
   color: #32495b;
 }
 
+li{
+  display: inline-block;
+}
+
 /* Classi riutilizzabili */
 .float-left{
   float: left;
@@ -75,14 +79,15 @@ header{
   line-height: 80px;
   background-color: #f4f9fd;
   border-bottom: 1px solid black;
+  position: sticky;
+  z-index: 199;
+  top: 0;
+  left: 0;
 }
 
 .header-bottom{
   height: 80px;
   line-height: 80px;
-  position: sticky;
-  z-index: 1;
-  top: 0;
   background-color: white;
 }
 
@@ -90,7 +95,6 @@ header ul li{
   display: inline-block;
   padding: 0 10px;
 }
-
 
 .header-top-left{
   width: 50%;
@@ -141,8 +145,8 @@ header ul li{
   width: 100%;
   height: 70px;
   background-color: #aceae3;
-  border-top: 3px solid grey;
-  border-bottom: 3px solid grey;
+  border-top: 3px solid #33475b;
+  border-bottom: 3px solid #33475b;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -166,7 +170,6 @@ header ul li{
 
 /* Main */
 main{
-  height: 1000px;
   background-color: white;
 }
 
@@ -281,44 +284,332 @@ main{
   padding-right: 7px;
   color: #ff7a59
 }
-
 /* Fine Crm */
 
+/* Sezione servizi formata da 3 colonne */
 .box{
-  height: 500px;
-  background-color: yellow;
+  height: 650px;
+  margin-bottom: 60px;
 }
 
-.first-box{
-  height: 500px;
-  width: 30%;
-  background-color: black;
-}
-
-.second-box{
-  height: 500px;
-  width: 30%;
+.three-column-services .triple-box:nth-child(2){
   margin: 0 5%;
-  background-color: black;
 }
 
-.third-box{
-  height: 500px;
+.triple-box{
   width: 30%;
-  background-color: black;
+  text-align: center;
+  padding: 20px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.section2{
-  height: 500px;
-  background-color: lightblue;
+.triple-box img{
+  height: 100px;
+  margin-bottom: 20px;
 }
 
-.box-azzurrino{
-  height: 500px;
-  background-color: red;
+.triple-box > :nth-child(3){
+  margin-bottom: 30px;
 }
 
-.prova-hubstop{
-  height: 500px;
-  background-color: black;
+.triple-box > :nth-child(3)::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  margin-top: 70px;
 }
+
+.popolar-feature{
+  font-size: 130%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.triple-box p{
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+  line-height: 1.6;
+}
+
+.triple-box ul{
+  margin-top: 30px;
+  text-align: left;
+}
+
+.triple-box li{
+  display: block;
+}
+
+.triple-box i{
+  color: #fe775a;
+  margin-right: 15px;
+}
+
+.triple-box > a{
+  display: inline-block;
+  margin: 50px 0 5px;
+}
+
+/* Sezione analytics */
+.analytics{
+  height: 680px;
+  background-image: linear-gradient(to right, #00aab8, #00bba8);
+  padding-top: 60px;
+}
+
+/* Sezione Testo */
+.text-analytics{
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.text-analytics h1{
+  font-size: 220%;
+  margin-bottom: 30px;
+}
+
+.text-analytics p{
+  font-size: 16px;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Sezione numeri */
+.down-num-boxes{
+  border-top: 1px solid white;
+}
+
+.num-boxes{
+  width: calc(100% / 4);
+  height: 50%;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.divisor{
+  border-right: 1px solid white;
+}
+
+.num-boxes img{
+  height: 35px;
+}
+
+.num-boxes p{
+  padding: 5px;
+}
+
+.num-boxes > :nth-child(2){
+  color: white;
+  font-size: 250%;
+  font-weight: 700;
+}
+
+.num-boxes > :nth-child(2)::after{
+  content: "+";
+  font-size: 60%;
+  font-weight: normal;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.num-boxes > :nth-child(3){
+  color: white;
+  font-size: 90%;
+}
+
+/* Sezione customers */
+.customers{
+  height: 700px;
+}
+
+.customers-list{
+  padding: 40px 80px;
+  height: 300px;
+}
+
+.list-num{
+  text-align: left;
+  width: 25%;
+  height: 100%;
+  margin-right: 160px;
+  margin-top: 18px;
+}
+
+.customers-list .list-num h2{
+  font-size: 250%;
+  margin-bottom: 20px;
+}
+
+.customers-list .list-num p{
+  width: 70%;
+  line-height: 1.6;
+}
+
+.list-partners{
+  width: calc(70% - 100px);
+  height: 100%;
+  text-align: center;
+}
+
+.box-row{
+  height: 50%;
+}
+
+.partners-box{
+  width: calc(100% / 4);
+  height: 100%;
+  padding: 20px;
+}
+
+.partners-box img{
+  max-height: 100%;
+  width: 120px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Sezione HubSpot free */
+.box-free .free{
+  width: 35%;
+  height: 400px;
+}
+
+.free h1{
+  font-size: 200%;
+  margin-bottom: 40px;
+}
+
+.free p{
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+
+.free small{
+  display: block;
+  margin-top: 60px;
+}
+
+.box-free .free-img{
+  text-align: right;
+  width: 60%;
+  height: 350px;
+}
+
+.free-img img{
+  height: 100%;
+}
+
+/* Footer */
+footer{
+  width: 100%;
+  background-color: #33475b;
+  padding-bottom: 50px;
+}
+
+/* Sezione links top */
+.footer-top{
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.footer-top .menu-links{
+  width: 100%;
+}
+
+.footer-top .menu-links .boxlinks{
+  width: calc(100% / 4);
+}
+
+/* Contenuto */
+.footer-top .menu-links .boxlinks h5{
+  font-size: 20px;
+  color: white;
+  margin: 30px 0;
+}
+
+.footer-top .menu-links .boxlinks li{
+  display: block;
+  line-height: 1.6;
+  list-style: none;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.footer-top .menu-links .boxlinks li a{
+  color: white;
+}
+
+/* Icone Social */
+.footer-top .menu-links .boxlinks ul.socials li{
+  display: inline;
+  font-size: 19px;
+}
+
+.footer-top .menu-links .boxlinks ul.socials li i{
+  color: white;
+  padding-top: 15px;
+  padding: 7.5px;
+}
+
+.boxlinks .socials{
+  padding-top: 10px;
+}
+
+/* Sezione lingue */
+.lenguage{
+  height: 40px;
+  text-align: center;
+}
+
+.lenguage .container{
+  border-bottom: 2px solid white;
+}
+
+.lenguage li a{
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Sezione logo/copyright bottom */
+.footer-bottom{
+  width: 100%;
+  margin-top: 40px;
+}
+
+.footer-bottom .copyright{
+  width: 100%;
+}
+
+/* Parte con logo */
+.footer-bottom .copyright .copyright-logo{
+  width: 50%;
+}
+
+.footer-bottom .copyright .copyright-logo p{
+  color: white;
+  font-size: 20px;
+}
+
+/* Parte privacy policy */
+.footer-bottom .copyright .privacy-policy{
+  width: 50%;
+  text-align: right;
+}
+
+.footer-bottom .copyright .privacy-policy ul li{
+  padding: 0 5px;
+}
+
+.footer-bottom .copyright .privacy-policy ul li a{
+  color: white;
+  font-size: 15px;
+}
+
+/* Fine footer */
